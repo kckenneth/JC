@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoJobs">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="409dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comparison"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="389dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Details"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Offer 1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Offer 2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <Button
+            android:id="@+id/mm_bt"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="mainMenu"
+            android:text="Main Menu" />
+
+        <Button
+            android:id="@+id/caj_bt"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="CompareAnotherJob"
+            android:text="Compare again" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="0dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <LinearLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Title"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Company"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Location"
+                android:textSize="14sp"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Yearly salary (adjusted)"
+                android:textSize="14sp"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Signing bonus (adjusted)"
+                android:textSize="14sp"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Yearly bonus (adjusted)"
+                android:textSize="14sp"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Retirement benefits"
+                android:textSize="14sp"
+                android:gravity="center_vertical|left"/>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Leave time"
+                android:gravity="center_vertical|left"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListView_Job1"
+            android:layout_width="164dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/ListView_Job2"
+            android:layout_width="164dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

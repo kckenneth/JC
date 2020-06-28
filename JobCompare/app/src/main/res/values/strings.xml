@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JobCompare</string>
+    <string name="wys">Enter between 1 and 5 (incl)</string>
+    <string name="wsb">Enter between 1 and 5 (incl)</string>
+    <string name="wyb">Enter between 1 and 5 (incl)</string>
+    <string name="wrb">Enter between 1 and 5 (incl)</string>
+    <string name="wlt">Enter between 1 and 5 (incl)</string>
+    <string name="desc">Please select two jobs to compare</string>
+</resources>
